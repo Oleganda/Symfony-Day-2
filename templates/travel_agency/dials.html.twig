@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TravelAgencyController!{% endblock %}
+
+{% block body %}
+<h2 class="text-center mt-5 mb-5">Hurrry Up to Book!</h2>
+
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-xs-1 m-auto">
+{% for x in dials %}
+    <div class="container d-flex justify-content-around">
+        <div class ='card p-0 mt-3 rounded-0' style='width: 330px; height: 70px rounded-0'>
+            <img src="{{x.img}}" class="card-img-top rounded-0" alt="..."  style= 'height: 200px'>
+            <div class="card-body">
+                <h4 class='card-title'>Destination: {{x.destination}}</h4>
+                    <p class='card-text'>{{x.hotel}} Hotel</p>
+                    <p class='card-text'>Transport: {{x.transport}}</p>
+                    <p class='card-text'>Good choice for {{x.type}}</p>
+                    <h4 class='card-text mt-3'>From {{x.price}} $</h4>
+            </div>
+             <div class='text-center m-2'><a href='' class='btn btn-info'>Details</a>
+            <a href='' class='btn btn-info'>Book a Trip</a></div>
+        </div>
+    </div>
+
+
+
+
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TravelAgencyController!{% endblock %}
+
+{% block body %}
+<h2 class="text-center">{{dials.destination}}</h2>
+
+
+<div class="card">
+ 
+  <div class="card-body">
+    <h5 class="card-title">{{dials.hotel}}</h5>
+    <p class="card-text">{{dials.details}}</p>
+    <a href="#" class="btn btn-primary">Book a Trip</a>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

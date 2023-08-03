@@ -1,0 +1,32 @@
+* {
+    font-family: 'Urbanist', sans-serif;
+}
+
+.title {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.image {
+    transition: transform .2s;
+    margin: 0 auto;
+
+}
+
+.image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.main-text {
+    text-align: center;
+
+    font-size: 60px;
+
+
+}
+
+
+.footer {
+    margin-top: 50px;
+}
